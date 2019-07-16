@@ -27,7 +27,7 @@ public class RegistracijaDAO {
 			Query query = session.createQuery(upit);
 			query.setParameter("u", userName);
 			List<User> listaUsera = query.getResultList();
-				if(listaUsera.isEmpty()) {
+				if(!(listaUsera.isEmpty())) {
 					session.getTransaction().commit();
 					return true;
 				}else {

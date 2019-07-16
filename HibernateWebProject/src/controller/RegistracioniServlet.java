@@ -39,8 +39,8 @@ public class RegistracioniServlet extends HttpServlet {
 		
 		if(ispitajPass) {
 			
-			boolean daLiJePrazanUser = dao.daLiPostojiUserUbazi(userName);
-				if(daLiJePrazanUser) {
+			boolean daLiJePunUser = dao.daLiPostojiUserUbazi(userName);
+				if(!(daLiJePunUser)) {
 					boolean upisiUbazu = dao.upisiUseraUbazu(userName, password);
 						if(upisiUbazu) {
 							response.sendRedirect("index.html");
