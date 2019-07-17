@@ -15,6 +15,7 @@ public class Artikal {
 	private String imeArtikla;
 	private double cena;
 	private int stanje;
+	private double popust;
 	@Transient
 	private int kolicina;
 	public int getIdArtikal() {
@@ -46,6 +47,12 @@ public class Artikal {
 	}
 	public void setKolicina(int kolicina) {
 		this.kolicina = kolicina;
+	}
+	public double getPopust() {
+		return popust;
+	}
+	public void setPopust(double popust) {
+		this.popust = popust;
 	}
 	
 	

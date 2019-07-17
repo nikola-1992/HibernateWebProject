@@ -15,7 +15,14 @@ public class User {
 	private String password;
 	@Enumerated
 	private Role role;
+	private double balance;
 	
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
 	public Role getRole() {
 		return role;
 	}

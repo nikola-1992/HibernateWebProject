@@ -30,6 +30,9 @@
 		
 		<!-- Names the annotated entity class -->
 		<mapping class="model.User"/>
+		<mapping class="model.Artikal"/>
+		<mapping class="model.Racun"/>
+					
 	
 
 	</session-factory>
